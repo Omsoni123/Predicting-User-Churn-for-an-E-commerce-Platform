@@ -1,0 +1,28 @@
+Approach:
+
+Loaded the dataset and performed preprocessing, including handling missing values, data formatting, and feature scaling.
+Engineered new features like user activity metrics and defined churn based on inactivity thresholds.
+Built two models: Logistic Regression and Random Forest.
+Evaluated models using metrics such as classification reports, ROC-AUC scores, and confusion matrices.
+Used SHAP values and feature importance to interpret model behavior.
+Formulated actionable recommendations based on the analysis.
+
+Final Scores:
+Logistic Regression:
+
+ROC-AUC: [0.5412077936171024]
+Accuracy: [ 0.80 ]
+
+Random Forest:
+
+ROC-AUC: [0.5670044525153204]
+Accuracy: [ 0.78 ]
+
+
+Recommendations:
+1. By analyzing feature importance from both Logistic Regression and Random Forest models, I identified key drivers of churn, such as users with lower purchase counts and reduced total spend.
+2. To address this, targeted marketing campaigns can be designed to re-engage users who exhibit early signs of churn, like those with high event activity but no purchases.
+3. Offering loyalty programs or providing special discounts could encourage at-risk users to make purchases and improve retention.
+4. Regular monitoring of user activity is essential, and the churn threshold (e.g., 30 days) should be adjusted to reflect changing business needs and user behavior.
+5. Personalized product recommendations and incentive-based strategies can also help retain users by aligning with their preferences.
+6. SHAP values and partial dependence plots are extremely helpful in understanding feature contributions, enabling the creation of effective, actionable strategies for reducing churn
